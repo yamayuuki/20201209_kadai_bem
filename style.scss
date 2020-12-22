@@ -1,0 +1,427 @@
+/* BASE
+---------------------------*/
+body {
+  color: #6C6C6F;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COMMON
+---------------------------*/
+/* header */
+.header{
+    padding: 30px 0;
+    background-color: #123D88;
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title{
+        line-height: 1;
+    }
+}
+
+/* g-nav */
+.g-nav{
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        margin-left: 30px;
+    }
+
+    &__link{
+        color: #fff;
+    }
+}
+
+/* footer */
+.footer{
+    padding: 30px 0;
+    background-color: #123D88;
+    text-align: right;
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__copy{
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+/* card */
+.card{
+    border-radius: 5px;
+    background-color: #fff;
+
+    &__icon{
+        margin-bottom: 15px;
+    }
+
+    &__title{
+        color: #2F2F35;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    &--shadow{
+        padding: 50px 25px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    &--flex{
+        display: flex;
+
+    }
+
+    &--card &__icon{
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+
+    &--card &__info{
+        flex: 1;
+    }
+}
+
+/* media */
+.media{
+
+    &__title{
+        margin-bottom: 20px;
+        color: #262934;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.33;
+    }
+
+    &__sub-title{
+        margin-bottom: 15px;
+        color: #256BE6;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+
+    &--lead{
+        max-width: 770px;
+        margin: 0 auto 80px;
+    }
+
+    &--bg {
+        color: #fff;
+    }
+
+    &--bg &__title, &--bg &__sub-title{
+        color: #fff;
+    }
+}
+
+/* btn */
+.btn{
+    display: inline-block;
+    width: 200px;
+    margin-top: 50px;
+    padding: 12px 0;
+    background-color: #256BE6;
+    border-radius: 28px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+
+    &--info{
+        background-color: #2DBE61;
+        box-shadow: 0 5px 10px rgba(22, 132, 61, 0.1);
+    }
+
+    &--outline{
+        border: 1px solid #fff;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &--orange{
+        display: inline-block;
+        width: 200px;
+        padding: 12px 0;
+        background-color: #256BE6;
+        border-radius: 28px;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        background-color: #F87624;
+    }
+}
+
+/* index.html
+---------------------------*/
+/* features */
+.features {
+    padding: 40px 0;
+
+    &__inner {
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        width: 42.7%;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50.4%;
+    }
+
+    &__card{
+        width: 44%;
+        margin: 40px 0;
+    }
+}
+
+/* payment */
+.payment{
+    padding: 80px 0;
+    background-color: #F7FAFF;
+
+    &__inner {
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__image {
+        width: 50.4%;
+    }
+
+    &__info{
+        width: 42.7%;
+    }
+}
+
+/* speciality */
+.speciality {
+    padding: 80px 0;
+    text-align: center;
+
+    &__inner {
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        width: 27.3%;
+    }
+}
+
+/* about.html
+---------------------------*/
+/* choose */
+.choose{
+    padding: 80px 0 50px;
+    background-color: #F7FAFF;
+
+    &__inner {
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__info{
+        text-align: center;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 48.7%;
+        margin-bottom: 30px;
+        padding: 30px 25px;
+    }
+}
+
+/* offer */
+.offer{
+    padding: 80px 0;
+    background-color: #123D88;
+    text-align: center;
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+/* wedo */
+.wedo{
+    padding: 80px 0;
+    text-align: center;
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    &__card {
+        width: 27.3%;
+    }
+}
+
+/* help.html
+-----------------------------*/
+/*secure*/
+.secure{
+    padding: 80px 0;
+    text-align: center;
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__card{
+        width: 370px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* payment2 */
+.payment2{
+    padding: 80px 0;
+    background-color: #F7FAFF;
+
+    &__inner {
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__image {
+        width: 415px;
+    }
+
+    &__info{
+        width: 670px;
+    }
+}
+
+/* general */
+.general{
+    margin: 80px;
+
+    &--lead{
+        max-width: 770px;
+        margin: 0 auto;
+    }
+
+    &__info{
+        text-align: center;
+        width: 600px;
+    }
+
+    &__inner{
+        width: 92%;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        margin-top: 30px;
+        font-size: 18px;
+        color: #2F2F35;
+        font-weight: bold;
+    }
+
+    &__fontwhite{
+        color: #fff;
+        margin-top: 39px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+
+    &__border{
+        margin: 0 8px;
+        border-radius: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 230px;
+        border: 1px solid #F1F1F1;
+        text-align: center;
+    }
+
+    &__bgcolor{
+        background-color: #256BE6;
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: center;
+    }
+}
